@@ -1,0 +1,92 @@
+/* todo list */
+
+.todo-list {
+    margin-top: 40px;
+  }
+  
+  .todo-completed {
+    border: 2px rgb(97, 94, 94);
+  }
+  
+  .todo-pending {
+    border: 2px rgb(46, 57, 57);
+  }
+  
+  .todo-completed,
+  .todo-pending {
+    border-bottom-style: solid;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(190, 176, 176);
+  }
+  
+  .todo-pending:first-child,
+  .todo-completed:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .todo-pending:last-child,
+  .todo-completed:last-child {
+    border: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .todo-list-item {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .todo-item {
+    font-size: 18px;
+    color: rgb(188, 51, 51);
+    padding-left: 20px;
+  }
+  
+  .todo-item p {
+    margin-bottom: 0px;
+  }
+  
+  .todo-item del {
+    color: rgb(11, 188, 188);
+  }
+  
+  /* *icons */
+  
+  .todo-mark-icon {
+    cursor: pointer;
+    font-size: 27px;
+  }
+  
+  .todo-mark-icon:hover {
+    color: rgb(208, 187, 24);
+  }
+  
+  .todo-edit-delete-icon {
+    padding: 0px 10px;
+  }
+  
+  .todo-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .delete-icon,
+  .edit-icon {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 5px;
+    margin-left: 10px;
+    color: rgb(15, 13, 13);
+  }
+  
+  .edit-icon:hover {
+    color: rgb(184, 46, 11);
+  }
+  
+  .delete-icon:hover {
+    color: rgb(0, 137, 139);
+  }
